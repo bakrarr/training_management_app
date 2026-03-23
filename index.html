@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Book Store</title>
-        <meta name="Description" content="This is my book store." />
-        <meta name="version" content="1.0" />
-        <link rel="stylesheet" href="" />
-    </head>
-    <body>
-        <!-- This is a comment . -->
-        <!-- Text Styling in HTML: 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Book Store</title>
+    <meta name="Description" content="This is my book store." />
+    <meta name="version" content="1.0" />
+    <link rel="stylesheet" href="" />
+</head>
+
+<body>
+    <!-- This is a comment . -->
+    <!-- Text Styling in HTML: 
          b => Bold
          strong => Bold important text
          i => italic
@@ -21,81 +23,199 @@
          ins => Inserted text
          sub => Subscript
          sup => Superscript -->
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <p>This is a <span>paragraph</span>. <br/>test line return</p>
-        <img src="" alt=""></img>
-        <a href="https://google.com" target="_blank">Google</a>
-        <a href="#h3" >go to heading 3</a>
-        <h3 id="h3">Heading 3</h3>
-        <!-- Lists in HTML
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <p>This is a <span>paragraph</span>. <br />test line return</p>
+    <img src="" alt=""></img>
+    <a href="https://google.com" target="_blank">Google</a>
+    <a href="#h3">go to heading 3</a>
+    <h3 id="h3">Heading 3</h3>
+    <!-- Lists in HTML
          ul => Unordered list
          li => List item
          ol => Ordered list
          dl => Description list
          dt => Term
          dd => Description of the Term -->
-        <ul>
-            <li>list item 1</li>
-            <li>list item 2</li>
-            <li>list item 3</li>
-        </ul>
-        <ol>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-        </ol>
-        <dl>
-            <dt>Term</dt>
-            <dd>Description</dd>
-        </dl>
-        <!-- Tables in HTML
+    <hr>
+    <ul>
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+    </ul>
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+    <dl>
+        <dt>Term</dt>
+        <dd>Description</dd>
+    </dl>
+    <hr>
+    <!-- Tables in HTML
          thead => Table head
          tbody => Table body
          tfoot => Table foot
          tr => Table row
          td => Table data cell
          th => Table header cell -->
-        <table>
-            <caption>Table Title</caption>
-            <thead>
-                <tr>
-                    <th>one</th>
-                    <th>two</th>
-                    <th>three</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>med</td>
-                    <td>ahmed</td>
-                    <td>mohammed</td>
-                </tr>
-                <tr>
-                    <td>20</td>
-                    <td>18</td>
-                    <td>5</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="2">total</td>
-                    <td>150</td>
-                </tr>
-            </tfoot>
-        </table>
-        <header>
-            header of the website
-            <nav>website navigation</nav>
-        </header>
-        <section>
-            content
-            <article>card, post, image, ...</article>
-        </section>
-        <aside>sidebar</aside>
-        <footer>
-            website footer
-        </footer>
+    <table>
+        <caption>Table Title</caption>
+        <thead>
+            <tr>
+                <th>one</th>
+                <th>two</th>
+                <th>three</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>med</td>
+                <td>ahmed</td>
+                <td>mohammed</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>18</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">total</td>
+                <td>150</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <header>
+        header of the website
+        <nav>website navigation</nav>
+    </header>
+    <hr>
+    <section>
+        content
+        <article>card, post, image, ...</article>
+    </section>
+    <hr>
+    <aside>sidebar</aside>
+    <hr>
+    <footer>
+        website footer
+    </footer>
+    <hr>
+    <audio controls autoplay loop muted>
+        <!-- If available different audio tags for browser support -->
+        <source src="media/example_audio1.mp3" type="audio/mpeg">
+        <source src="media/example_audio1.ogg" type="audio/ogg">
+        Your browser does not support video tag.
+    </audio>
+    <hr>
+    <video src="" controls autoplay loop muted poster=""></video>
+    <hr>
+    <form action="" method="post">
+        <div>
+            <label for="">Username</label>
+            <input type="text" name="userName" value="Aboubakr" readonly required>
+        </div>
+        <div>
+            <label for="">Password</label>
+            <input type="password" name="passWord" placeholder="Enter your password" required autofocus>
+        </div>
+        <div>
+            <label for="">Email</label>
+            <input type="email" name="email" value="arrach@gmail.com" required disabled>
+        </div>
+        <div>
+            <label for="">Number</label>
+            <input type="number" name="number" min="0" max="100" step="20">
+        </div>
+        <br>
+        <div class="radio1">
+            <input id="win" type="radio" name="OS" value="windows" checked>
+            <label for="win">windows</label>
+            <input id="mac" type="radio" name="OS" value="mac">
+            <label for="mac">mac</label>
+            <input type="radio" name="OS" value="linux">
+            <label for="">linux</label>
+        </div>
+        <br>
+        <div class="checkbox1">
+            <div>
+                <input id="1" type="checkbox" name="day" value="monday">
+                <label for="1">Monday</label>
+            </div>
+            <div>
+                <input id="2" type="checkbox" name="day" value="tuesday" checked>
+                <label for="2">Tuesday</label>
+            </div>
+            <div>
+                <input type="checkbox" name="day" value="wendsday">
+                <label for="">Wendsday</label>
+            </div>
+        </div>
+        <br>
+        <label for="book">Choose Book:</label>
+        <select name="book" id="book">
+            <optgroup label="Romantic">
+                <option value="1">Book 1</option>
+                <option value="2">Book 2</option>
+                <option value="3">Book 3</option>
+            </optgroup>
+            <optgroup label="Police">
+                <option value="4">Book 4</option>
+                <option value="5">Book 5</option>
+                <option value="6">Book 6</option>
+            </optgroup>
+        </select>
+        <br>
+        <textarea name="subject" id="subject1"></textarea>
+        <br>
+        <div>
+            <label for="">Upload</label>
+            <input type="file" name="" id="">
+        </div>
+        <br>
+        <div>
+            <label for="">Search</label>
+            <input type="search" name="" id="">
+        </div>
+        <br>
+        <div>
+            <label for="">Date</label>
+            <input type="date" name="" id="">
+        </div>
+        <div>
+            <label for="">Month</label>
+            <input type="month" name="" id="">
+        </div>
+        <div>
+            <label for="">time</label>
+            <input type="time" name="" id="">
+        </div>
+        <div>
+            <input list="programming" name="prog" id="">
+            <datalist id="programming">
+                <option value="Python">
+                <option value="PHP">
+                <option value="Flutter">
+            </datalist>
+        </div>
+        <input type="reset" value="reset">
+        <input type="submit">
+    </form>
+    <q>This is a wise word</q>
+    <blockquote>Important wise word</blockquote>
+    <button>click</button>
+    <hr>
+    <pre>
+        <code>
+            var x = 10;
+            var y = 20;
+            console.log(x + y);
+        </code>
+    </pre>
+</body>
 
-    </body>
 </html>
